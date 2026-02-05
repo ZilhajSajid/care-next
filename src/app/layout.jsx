@@ -7,9 +7,9 @@ export const inter = Inter({
   weight: ["100", "200", "400", "500", "600", "800"],
 });
 
-// export const hindSiliguri= Hind_Siliguri({
-//   weight
-// })
+export const hindSiliguri = Hind_Siliguri({
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -19,11 +19,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
-        <header className="py-2 md:w-11/12 mx-auto">
+      <body className={`${inter.className}  antialiased`}>
+        <header className=" md:w-11/12 mx-auto">
           <Navbar />
         </header>
-        <main className="py-3 md:w-11/12 mx-auto">{children}</main>
+        <main className="py-3 md:w-11/12 mx-auto min-h-[calc(100vh-360px)]">
+          {children}
+        </main>
         <footer>
           <Footer />
         </footer>
