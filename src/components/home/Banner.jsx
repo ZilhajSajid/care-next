@@ -4,7 +4,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8 p-5">
       <div className="flex-1 space-y-2">
         <h2
           className={`text-4xl font-bold leading-15 ${hindSiliguri.className}`}
