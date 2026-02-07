@@ -3,15 +3,43 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaCalendarCheck } from "react-icons/fa";
-import { resolve } from "styled-jsx/css";
+
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const service = await getSingleService(id);
+
+  return {
+    title: service?.name,
+    description: service?.shortDescription,
+
+    openGraph: {
+      title: service?.name,
+      description: service?.shortDescription,
+      images: [
+        {
+          url: service?.image || "https://i.ibb.co.com/C5dd0h2p/image.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: service?.name,
+      description: service?.shortDescription,
+      images: [service?.image || "/assets/og-services.png"],
+    },
+  };
+}
 
 const ServiceDetailsPage = async ({ params }) => {
   const { id } = await params;
-  await new Promise((resolve) =>
-    setTimeout(() => {
-      resolve();
-    }, 2000),
-  );
+  //   await new Promise((resolve) =>
+  //     setTimeout(() => {
+  //       resolve();
+  //     }, 2000),
+  //   );
   const service = await getSingleService(id);
   console.log(service);
 
