@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaCalendarCheck } from "react-icons/fa";
+import SeeDetailsBtn from "../buttons/SeeDetailsBtn";
 
 const ServicesCard = ({ service }) => {
   const { name, slug, shortDescription, pricePerHour, image, _id } = service;
@@ -31,13 +32,7 @@ const ServicesCard = ({ service }) => {
         <div className="card-actions justify-between items-center mt-4">
           <span className="badge badge-outline">{slug}</span>
 
-          <Link
-            href={`/services/${_id}`}
-            className="btn btn-primary btn-sm flex items-center gap-2"
-          >
-            <FaCalendarCheck />
-            See Details
-          </Link>
+          <SeeDetailsBtn service={service} />
         </div>
       </div>
     </div>

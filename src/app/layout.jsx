@@ -89,7 +89,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <body className={`${inter.className}  antialiased`}>
         <header className=" md:w-11/12 mx-auto">
           <Navbar />

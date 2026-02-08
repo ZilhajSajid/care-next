@@ -5,7 +5,10 @@ import { ObjectId } from "mongodb";
 
 export const getServices = async () => {
   const services = await dbConnect(collections.SERVICES).find().toArray();
-  return services;
+  return services.map((service) => ({
+    ...service,
+    _id: service._id.toString(),
+  }));
 };
 
 export const getSingleService = async (id) => {
@@ -14,5 +17,5 @@ export const getSingleService = async (id) => {
   }
   const query = { _id: new ObjectId(id) };
   const service = await dbConnect(collections.SERVICES).findOne(query);
-  return service || {};
+  return { ...service, _id: service._id.toString() } || {};
 };

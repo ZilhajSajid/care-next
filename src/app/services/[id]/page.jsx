@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
       description: service?.shortDescription,
       images: [
         {
-          url: service?.image || "https://i.ibb.co.com/C5dd0h2p/image.png",
+          url: service?.image || "https://i.ibb.co.com/4R01LH2V/image.png",
           width: 1200,
           height: 630,
         },
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: service?.name,
       description: service?.shortDescription,
-      images: [service?.image || "/assets/og-services.png"],
+      images: [service?.image || "https://i.ibb.co.com/4R01LH2V/image.png"],
     },
   };
 }

@@ -2,11 +2,11 @@ import React from "react";
 import ServicesCard from "../cards/ServicesCard";
 import { getServices } from "@/actions/server/services";
 const Services = async () => {
-  await new Promise((resolve) =>
-    setTimeout(() => {
-      resolve();
-    }, 3000),
-  );
+  // await new Promise((resolve) =>
+  //   setTimeout(() => {
+  //     resolve();
+  //   }, 3000),
+  // );
 
   const services = (await getServices()) || [];
 

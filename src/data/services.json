@@ -1,35 +1,118 @@
-[
-  {
-    "id": 1,
-    "name": "Baby Care",
-    "name_bn": "শিশু যত্ন সেবা",
-    "slug": "baby-care",
-    "shortDescription": "Trusted babysitting and newborn care at home",
-    "description": "Our Baby Care service provides trained and experienced caregivers who ensure the safety, comfort, and well-being of your infant or toddler. Services include feeding, diaper changing, bathing, maintaining hygiene, preparing meals, supervising sleep, engaging in educational play, and creating a nurturing environment at home. We focus on building trust and giving parents peace of mind while they are away.",
-    "description_bn": "আমাদের শিশু যত্ন সেবায় প্রশিক্ষিত ও অভিজ্ঞ কেয়ারগিভাররা আপনার নবজাতক বা ছোট শিশুর নিরাপত্তা, আরাম এবং সুস্থতার সম্পূর্ণ যত্ন নেন। এই সেবার মধ্যে রয়েছে শিশুকে খাওয়ানো, ডায়াপার পরিবর্তন, গোসল করানো, পরিষ্কার-পরিচ্ছন্নতা বজায় রাখা, খাবার প্রস্তুত করা, ঘুমের তদারকি, শিক্ষামূলক খেলাধুলায় যুক্ত করা এবং ঘরে একটি যত্নশীল পরিবেশ নিশ্চিত করা। অভিভাবকদের মানসিক শান্তি নিশ্চিত করাই আমাদের প্রধান লক্ষ্য।",
-    "pricePerHour": 100,
-    "image": "https://i.ibb.co.com/4yCzLMp/baby-Care.jpg"
-  },
-  {
-    "id": 2,
-    "name": "Elderly Care",
-    "name_bn": "বয়স্ক যত্ন সেবা",
-    "slug": "elderly-care",
-    "shortDescription": "Compassionate elderly home care services",
-    "description": "Our Elderly Care service offers compassionate and respectful assistance for senior citizens in their own homes. Caregivers help with daily activities such as bathing, dressing, eating, medication reminders, mobility support, light exercise, and companionship. We aim to improve the quality of life and ensure dignity, comfort, and emotional support for elderly family members.",
-    "description_bn": "আমাদের বয়স্ক যত্ন সেবায় প্রবীণ নাগরিকদের নিজ বাড়িতে সম্মানজনক ও সহানুভূতিশীল সহায়তা প্রদান করা হয়। কেয়ারগিভাররা গোসল, পোশাক পরানো, খাওয়া-দাওয়া, ওষুধের সময় মনে করিয়ে দেওয়া, চলাফেরায় সহায়তা, হালকা ব্যায়াম এবং সঙ্গ দেওয়ার মতো দৈনন্দিন কাজে সাহায্য করেন। এই সেবার লক্ষ্য হলো বয়স্ক সদস্যদের জীবনমান উন্নত করা এবং তাদের আরাম ও মর্যাদা নিশ্চিত করা।",
-    "pricePerHour": 120,
-    "image": "https://i.ibb.co.com/G3bTjqvV/elderly-Care.jpg"
-  },
-  {
-    "id": 3,
-    "name": "Sick People Care",
-    "name_bn": "অসুস্থ রোগী যত্ন সেবা",
-    "slug": "sick-care",
-    "shortDescription": "Home nursing and recovery support",
-    "description": "Our Sick People Care service provides professional home-based support for patients who are ill, injured, or recovering from surgery. Services include vital sign monitoring, medication administration, wound care, hygiene assistance, mobility support, and overall health supervision. We ensure proper recovery in a safe and comfortable home environment.",
-    "description_bn": "আমাদের অসুস্থ রোগী যত্ন সেবায় অসুস্থ, আহত বা অস্ত্রোপচারের পর সুস্থ হয়ে ওঠা রোগীদের জন্য ঘরে বসেই পেশাদার সেবা প্রদান করা হয়। এর মধ্যে রয়েছে শারীরিক অবস্থা পর্যবেক্ষণ, ওষুধ প্রদান, ক্ষত পরিষ্কার ও ড্রেসিং, পরিষ্কার-পরিচ্ছন্নতায় সহায়তা, চলাফেরায় সহায়তা এবং সার্বিক স্বাস্থ্য তদারকি। নিরাপদ ও আরামদায়ক পরিবেশে রোগীর দ্রুত সুস্থতা নিশ্চিত করাই আমাদের লক্ষ্য।",
-    "pricePerHour": 110,
-    "image": "https://i.ibb.co.com/PGTFtTPg/sick-People.jpg"
-  }
-]
+  [
+    {
+      "id": "baby-1",
+      "category": "baby-care",
+      "name": "Newborn Baby Care",
+      "name_bn": "নবজাতক শিশুর যত্ন",
+      "slug": "newborn-baby-care",
+      "shortDescription": "Professional newborn care at home",
+      "description": "Our Newborn Baby Care service ensures gentle and attentive care for your newborn in the comfort of your home.\n\nTrained caregivers assist with feeding, diaper changing, bathing, and hygiene.\n\nWe carefully monitor sleep and comfort to keep your baby safe and calm.\n\nCaregivers provide age-appropriate interaction to support early development.\n\nStrict safety and cleanliness standards are always followed.\n\nWith CareConnect, your newborn is always in loving hands.",
+      "description_bn": "আমাদের নবজাতক শিশুর যত্ন সেবা ঘরেই শিশুর কোমল ও যত্নশীল সেবা নিশ্চিত করে।\n\nপ্রশিক্ষিত কেয়ারগিভাররা খাওয়ানো, ডায়াপার পরিবর্তন, গোসল ও পরিষ্কার-পরিচ্ছন্নতা করেন।\n\nশিশুর ঘুম ও আরামের প্রতি বিশেষ নজর রাখা হয়।\n\nবয়স উপযোগী কার্যক্রমের মাধ্যমে প্রাথমিক বিকাশে সহায়তা করা হয়।\n\nকঠোর নিরাপত্তা ও পরিচ্ছন্নতার নীতি অনুসরণ করা হয়।\n\nCareConnect আপনার শিশুর জন্য নিরাপদ পছন্দ।",
+      "pricePerHour": 100,
+      "image": "https://i.ibb.co.com/KcMvdMvN/baby1.jpg"
+    },
+
+    {
+      "id": "baby-2",
+      "category": "baby-care",
+      "name": "Toddler Care",
+      "name_bn": "টডলার কেয়ার",
+      "slug": "toddler-care",
+      "shortDescription": "Safe care for toddlers",
+      "description": "Our Toddler Care service focuses on safety and healthy growth.\n\nCaregivers assist with meals and hygiene.\n\nWe encourage learning through play.\n\nSupervision is provided at all times.\n\nPositive behavior is gently guided.\n\nYour toddler stays happy and secure.",
+      "description_bn": "আমাদের টডলার কেয়ার সেবায় নিরাপত্তা ও সুস্থ বিকাশ নিশ্চিত করা হয়।\n\nখাবার ও পরিষ্কার-পরিচ্ছন্নতায় সহায়তা করা হয়।\n\nখেলার মাধ্যমে শেখার সুযোগ দেওয়া হয়।\n\nসবসময় তদারকি করা হয়।\n\nআচরণ উন্নয়নে সহায়তা করা হয়।\n\nআপনার শিশু থাকবে নিরাপদ ও আনন্দিত।",
+      "pricePerHour": 90,
+      "image": "https://i.ibb.co.com/dsX9v7cs/baby2.jpg"
+    },
+
+    {
+      "id": "baby-3",
+      "category": "baby-care",
+      "name": "Full Day Babysitting",
+      "name_bn": "ফুল ডে বেবিসিটিং",
+      "slug": "full-day-babysitting",
+      "shortDescription": "Babysitter for full day",
+      "description": "Full-day babysitting for working parents.\n\nMeals and hygiene support included.\n\nPlaytime and supervision provided.\n\nSafe home environment maintained.\n\nFlexible scheduling available.\n\nReliable care you can trust.",
+      "description_bn": "কর্মরত অভিভাবকদের জন্য দিনব্যাপী বেবিসিটিং সেবা।\n\nখাবার ও পরিষ্কার-পরিচ্ছন্নতায় সহায়তা।\n\nখেলাধুলা ও তদারকি করা হয়।\n\nনিরাপদ পরিবেশ নিশ্চিত করা হয়।\n\nফ্লেক্সিবল সময়সূচি।\n\nনির্ভরযোগ্য সেবা।",
+      "pricePerHour": 110,
+      "image": "https://i.ibb.co.com/zTFqmbmM/baby3.jpg"
+    },
+
+    {
+      "id": "elderly-1",
+      "category": "elderly-care",
+      "name": "Daily Elderly Assistance",
+      "name_bn": "দৈনিক বয়স্ক সহায়তা",
+      "slug": "daily-elderly-assistance",
+      "shortDescription": "Daily help for elderly",
+      "description": "Daily assistance for elderly people.\n\nHelp with mobility and meals.\n\nHygiene support provided.\n\nFriendly companionship.\n\nRespectful and patient care.\n\nComfort and dignity ensured.",
+      "description_bn": "বয়স্কদের জন্য দৈনিক সহায়তা সেবা।\n\nচলাফেরা ও খাবারে সহায়তা।\n\nপরিষ্কার-পরিচ্ছন্নতায় সহায়তা।\n\nবন্ধুসুলভ সঙ্গ প্রদান।\n\nসম্মান ও ধৈর্যের সাথে যত্ন।\n\nআরাম ও মর্যাদা নিশ্চিত।",
+      "pricePerHour": 120,
+      "image": "https://i.ibb.co.com/hRJrwyYX/elderly-1.jpg"
+    },
+
+    {
+      "id": "elderly-2",
+      "category": "elderly-care",
+      "name": "Elderly Companionship",
+      "name_bn": "বয়স্ক সঙ্গী সেবা",
+      "slug": "elderly-companionship",
+      "shortDescription": "Friendly companion service",
+      "description": "Emotional support for elderly.\n\nFriendly conversation.\n\nReduce loneliness.\n\nEncourage activity.\n\nBuild trust.\n\nImprove quality of life.",
+      "description_bn": "বয়স্কদের মানসিক সহায়তা।\n\nবন্ধুসুলভ কথা বলা।\n\nএকাকীত্ব কমানো।\n\nকার্যক্রমে উৎসাহ।\n\nবিশ্বাস তৈরি।\n\nজীবনের মান উন্নত করা।",
+      "pricePerHour": 110,
+      "image": "https://i.ibb.co.com/ns9D1Cjx/elderly2.jpg"
+    },
+
+    {
+      "id": "elderly-3",
+      "category": "elderly-care",
+      "name": "Medication Support",
+      "name_bn": "ঔষধ সহায়তা",
+      "slug": "medication-support",
+      "shortDescription": "Medication reminders",
+      "description": "Ensure timely medication.\n\nFollow prescriptions.\n\nTrack dosage.\n\nSupport recovery.\n\nReduce health risks.\n\nPeace of mind.",
+      "description_bn": "সময়মতো ঔষধ গ্রহণ নিশ্চিত।\n\nপ্রেসক্রিপশন অনুসরণ।\n\nডোজ পর্যবেক্ষণ।\n\nসুস্থতায় সহায়তা।\n\nঝুঁকি কমানো।\n\nমানসিক শান্তি।",
+      "pricePerHour": 130,
+      "image": "https://i.ibb.co.com/7Jkzdnw6/elderly3.jpg"
+    },
+
+    {
+      "id": "sick-1",
+      "category": "sick-care",
+      "name": "Home Nursing Care",
+      "name_bn": "হোম নার্সিং কেয়ার",
+      "slug": "home-nursing-care",
+      "shortDescription": "Professional home nursing",
+      "description": "Professional nursing at home.\n\nMonitor vitals.\n\nMedication support.\n\nHygiene care.\n\nComfort focused.\n\nFaster recovery.",
+      "description_bn": "ঘরে পেশাদার নার্সিং সেবা।\n\nভাইটাল পর্যবেক্ষণ।\n\nঔষধ সহায়তা।\n\nপরিষ্কার-পরিচ্ছন্নতা।\n\nআরামের প্রতি গুরুত্ব।\n\nদ্রুত সুস্থতা।",
+      "pricePerHour": 140,
+      "image": "https://i.ibb.co.com/QjkTrVgs/sick1.jpg"
+    },
+
+    {
+      "id": "sick-2",
+      "category": "sick-care",
+      "name": "Post Surgery Care",
+      "name_bn": "অপারেশন পরবর্তী যত্ন",
+      "slug": "post-surgery-care",
+      "shortDescription": "Recovery care after surgery",
+      "description": "Post-surgery monitoring.\n\nWound care.\n\nMedication support.\n\nMobility assistance.\n\nComfort and safety.\n\nSmooth recovery.",
+      "description_bn": "অপারেশন পরবর্তী পর্যবেক্ষণ।\n\nক্ষত যত্ন।\n\nঔষধ সহায়তা।\n\nচলাফেরায় সহায়তা।\n\nনিরাপত্তা ও আরাম।\n\nমসৃণ সুস্থতা।",
+      "pricePerHour": 150,
+      "image": "https://i.ibb.co.com/Tqw3ykLX/sick2.jpg"
+    },
+
+    {
+      "id": "sick-3",
+      "category": "sick-care",
+      "name": "Chronic Patient Care",
+      "name_bn": "দীর্ঘমেয়াদি রোগীর যত্ন",
+      "slug": "chronic-patient-care",
+      "shortDescription": "Long-term patient care",
+      "description": "Long-term monitoring.\n\nDaily assistance.\n\nMedication support.\n\nComfort care.\n\nEmotional support.\n\nBetter living.",
+      "description_bn": "দীর্ঘমেয়াদি পর্যবেক্ষণ।\n\nদৈনিক সহায়তা।\n\nঔষধ সহায়তা।\n\nআরামদায়ক যত্ন।\n\nমানসিক সহায়তা।\n\nউন্নত জীবনমান।",
+      "pricePerHour": 140,
+      "image": "https://i.ibb.co.com/23WDF3vh/sick3.jpg"
+    }
+  ]

@@ -1,0 +1,88 @@
+"use client";
+import { postUser } from "@/actions/server/auth";
+import { useRouter } from "next/navigation";
+import React from "react";
+import { FcGoogle } from "react-icons/fc";
+
+const RegisterForm = () => {
+  const router = useRouter();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const image = e.target.image.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    console.log({ name, image, email, password });
+    const result = await postUser({ name, image, email, password });
+    if (result.acknowledged) {
+      alert("account created successful");
+      router.push("/login");
+    }
+  };
+  return (
+    <div>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        {/* Name */}
+        <div>
+          <label className="label">Full Name</label>
+          <input
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            className="input input-bordered w-full"
+          />
+        </div>
+
+        {/* Photo URL */}
+        <div>
+          <label className="label">Photo URL</label>
+          <input
+            name="image"
+            type="text"
+            placeholder="Enter photo URL"
+            className="input input-bordered w-full"
+          />
+        </div>
+
+        {/* Email */}
+        <div>
+          <label className="label">Email</label>
+          <input
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            className="input input-bordered w-full"
+          />
+        </div>
+
+        {/* Password */}
+        <div>
+          <label className="label">Password</label>
+          <input
+            name="password"
+            type="password"
+            placeholder="Enter your password"
+            className="input input-bordered w-full"
+          />
+        </div>
+
+        {/* Register Button */}
+        <button className="btn btn-primary w-full">Create Account</button>
+
+        {/* Divider */}
+        <div className="divider">OR</div>
+
+        {/* Google Register */}
+        <button
+          type="button"
+          className="btn btn-outline w-full flex items-center justify-center gap-2"
+        >
+          <FcGoogle size={22} />
+          Continue with Google
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default RegisterForm;
