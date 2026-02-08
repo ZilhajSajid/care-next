@@ -1,13 +1,13 @@
 # CareConnect - Baby Sitting & Elderly Care Service Platform
 
-![CareConnect Logo](./public/assets/hero.png)
+![CareConnect Logo](https://i.ibb.co.com/yBVRYV6D/logo.webp)
 
 CareConnect is a comprehensive web application that provides reliable and trusted care services for children, elderly, and other family members. The platform connects users with professional caretakers for babysitting, elderly care, and special home care services.
 
 ## 🌟 Live Demo
 
-- **Live Site**: [Your Live Deployment URL]
-- **GitHub Repository**: [Your Repo URL]
+- **Live Site**: [https://care-next-gray.vercel.app]
+- **GitHub Repository**: [https://github.com/ZilhajSajid/care-next]
 
 ## 📋 Project Overview
 
