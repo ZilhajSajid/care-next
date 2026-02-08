@@ -1,6 +1,6 @@
 # CareConnect - Baby Sitting & Elderly Care Service Platform
 
-![CareConnect Logo](https://i.ibb.co.com/yBVRYV6D/logo.webp)
+![CareConnect Logo](https://i.ibb.co.com/zVr1M3qs/image.png)
 
 CareConnect is a comprehensive web application that provides reliable and trusted care services for children, elderly, and other family members. The platform connects users with professional caretakers for babysitting, elderly care, and special home care services.
 
