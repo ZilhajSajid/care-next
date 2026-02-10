@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
+import SocialButton from "../buttons/SocialButton";
 
 const RegisterForm = () => {
   const router = useRouter();
@@ -74,13 +75,7 @@ const RegisterForm = () => {
         <div className="divider">OR</div>
 
         {/* Google Register */}
-        <button
-          type="button"
-          className="btn btn-outline w-full flex items-center justify-center gap-2"
-        >
-          <FcGoogle size={22} />
-          Continue with Google
-        </button>
+        <SocialButton />
       </form>
     </div>
   );
