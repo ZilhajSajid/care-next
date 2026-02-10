@@ -3,6 +3,7 @@ import { postUser } from "@/actions/server/auth";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
+import { toast } from "react-toastify";
 
 const RegisterForm = () => {
   const router = useRouter();
@@ -15,7 +16,7 @@ const RegisterForm = () => {
     console.log({ name, image, email, password });
     const result = await postUser({ name, image, email, password });
     if (result.acknowledged) {
-      alert("account created successful");
+      toast.success("Register Successful");
       router.push("/login");
     }
   };

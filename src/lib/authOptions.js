@@ -15,5 +15,5 @@ export const authOptions = {
         return user;
       },
     }),
-  ],
+  ],  
 };

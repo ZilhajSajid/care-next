@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import NavLink from "../buttons/NavLink";
 import Link from "next/link";
 import { FaCalendarCheck } from "react-icons/fa";
+import NextAuthButtons from "../buttons/NextAuthButtons";
 
 const Navbar = () => {
   const links = (
@@ -56,9 +57,7 @@ const Navbar = () => {
           <Link href={"/booking"} className="btn btn-primary">
             <FaCalendarCheck />
           </Link>
-          <Link href={"/login"}>
-            <button className="btn btn-primary btn-outline">Log In</button>
-          </Link>
+          <NextAuthButtons/>
         </div>
       </div>
     </div>

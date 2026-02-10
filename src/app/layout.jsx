@@ -2,6 +2,8 @@ import { Geist, Geist_Mono, Hind_Siliguri, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
+import { ToastContainer } from "react-toastify";
+import NextAuthProvider from "@/provider/NextAuthProvider";
 
 export const inter = Inter({
   weight: ["100", "200", "400", "500", "600", "800"],
@@ -89,18 +91,22 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html suppressHydrationWarning lang="en">
-      <body className={`${inter.className}  antialiased`}>
-        <header className=" md:w-11/12 mx-auto">
-          <Navbar />
-        </header>
-        <main className="py-3 md:w-11/12 mx-auto min-h-[calc(100vh-360px)]">
-          {children}
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-      </body>
-    </html>
+    <NextAuthProvider>
+      <html suppressHydrationWarning lang="en">
+        <body className={`${inter.className}  antialiased`}>
+          {" "}
+          <header className=" md:w-11/12 mx-auto">
+            <Navbar />
+          </header>
+          <main className="py-3 md:w-11/12 mx-auto min-h-[calc(100vh-360px)]">
+            {children}
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+          <ToastContainer position="top-right" autoClose={2000} />
+        </body>
+      </html>
+    </NextAuthProvider>
   );
 }

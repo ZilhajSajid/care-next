@@ -2,8 +2,11 @@
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { signIn } from "next-auth/react";
+import Swal from "sweetalert2";
+import { useRouter } from "next/navigation";
 
 const LoginForm = () => {
+  const router = useRouter();
   const handleSubmit = async (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -13,6 +16,13 @@ const LoginForm = () => {
       password,
       redirect: false,
     });
+    console.log(result);
+    if (!result.ok) {
+      Swal.fire("Error", "Email Password Not Matched", "error");
+    } else {
+      Swal.fire("Success", "Welcome to CareConnect", "success");
+      router.push('/')
+    }
   };
   return (
     <div>
