@@ -1,12 +1,16 @@
 "use client";
 import { postUser } from "@/actions/server/auth";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
 import SocialButton from "../buttons/SocialButton";
+import { signIn } from "next-auth/react";
 
 const RegisterForm = () => {
+  const params = useSearchParams();
+  const callBack = params.get("callbackUrl") || "";
+
   const router = useRouter();
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,8 +21,12 @@ const RegisterForm = () => {
     console.log({ name, image, email, password });
     const result = await postUser({ name, image, email, password });
     if (result.acknowledged) {
+      const res = await signIn("credentials", {
+        email,
+        password,
+        callbackUrl: callBack,
+      });
       toast.success("Register Successful");
-      router.push("/login");
     }
   };
   return (

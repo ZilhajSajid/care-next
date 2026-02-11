@@ -1,8 +1,13 @@
+"use client";
 import LoginForm from "@/components/auth/LoginForm";
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 const LoginPage = () => {
+  const params = useSearchParams();
+
+  const callBack = params.get("callbackUrl") || "";
   return (
     <div className="md:min-h-screen grid grid-cols-1 md:grid-cols-2">
       {/* LEFT SIDE - FORM */}
@@ -17,7 +22,10 @@ const LoginPage = () => {
           {/* Register Section */}
           <p className="text-center">
             Don’t have an account?{" "}
-            <Link href="/register" className="text-primary font-semibold">
+            <Link
+              href={`/register?callbackUrl=${callBack}`}
+              className="text-primary font-semibold"
+            >
               Register
             </Link>
           </p>
