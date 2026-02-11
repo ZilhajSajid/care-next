@@ -2,15 +2,20 @@
 import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import React from "react";
+import { toast } from "react-toastify";
 
 const NextAuthButtons = () => {
   const session = useSession();
+  const handleLogOut = async () => {
+    await signOut({ callbackUrl: "/" });
+    toast.success("Log Out");
+  };
 
   return (
     <div>
       {session.status === "authenticated" ? (
         <>
-          <button onClick={() => signOut()} className="btn btn-primary">
+          <button onClick={handleLogOut} className="btn btn-primary">
             Logout
           </button>
         </>
